@@ -1,1 +1,1 @@
-play at - https://vaibhav14pan.github.io/Bubble-Game-/
+play at - https://vaibhav14pan.github.io/Bubble-Game/
