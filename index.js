@@ -153,7 +153,7 @@ function spawnEnemies(){
         const angle=Math.atan2(canvas.height/2-y,canvas.width/2-x);
         const velocity={x:Math.cos(angle)*3,y:Math.sin(angle)*3};
         enemies.push(new Enemy(x,y,radius,color,velocity))
-    },2000);
+    },8000);
 }
 window.addEventListener('mousedown',(event)=>{
     const angle=Math.atan2(event.clientY-canvas.height/2,event.clientX-canvas.width/2);
