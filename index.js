@@ -151,9 +151,9 @@ function spawnEnemies(){
         // const y=Math.random()<0.5?0-radius:canvas.height+radius;
         const color=`hsl(${Math.random()*360},50%,50%)`;
         const angle=Math.atan2(canvas.height/2-y,canvas.width/2-x);
-        const velocity={x:Math.cos(angle),y:Math.sin(angle)};
+        const velocity={x:Math.cos(angle)*2,y:Math.sin(angle)*2};
         enemies.push(new Enemy(x,y,radius,color,velocity))
-    },8000);
+    },2000);
 }
 window.addEventListener('mousedown',(event)=>{
     const angle=Math.atan2(event.clientY-canvas.height/2,event.clientX-canvas.width/2);
